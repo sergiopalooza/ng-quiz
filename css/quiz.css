@@ -67,3 +67,73 @@ body { background-color: #fff; padding: 20px; }
 	padding: 5px 15px;
 	border-radius: 6px;
 }
+
+/* Questions */
+#myQuiz .question {
+	width: 550px;
+	position: absolute;
+	top: 225px;
+	left: 40px;
+}
+
+#myQuiz .question .txt {
+	font-size: 1.6em;
+	margin: 0px 0px 20px 0px;
+}
+
+#myQuiz .question .ans {
+	display: inline-block;
+	font-size: 1.1em;
+	width: 225px;
+	border: 2px solid rgba(238,289,102,.4); /*60% transparant*/
+	border-radius: 6px;
+	padding: 10px;
+	margin: 0px 15px 15px 0px;
+	position: relative;
+}
+
+#myQuiz .question .ans.selected { /*ans and selected classes*/
+	border-color: #be4b16;
+} 
+
+#myQuiz .question .ans.correct {
+	border-color: #459a2e;
+} 
+
+#myQuiz .question .ans::after { /*sudo element injected anon html element after selected one*/
+	content: '';
+	display: block; /*item we are adding will be block*/
+	width: 20px;
+	height: 20px;
+	background: no-repeat 0px 0px;
+	background-size: 20px 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#myQuiz .question .ans.selected::after {
+	background-image: url(../images/icon_incorrect.svg); 
+}
+
+#myQuiz .question .ans.correct::after {
+	background-image: url(../images/icon_correct.svg); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
