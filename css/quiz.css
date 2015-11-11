@@ -120,10 +120,17 @@ body { background-color: #fff; padding: 20px; }
 	background-image: url(../images/icon_correct.svg); 
 }
 
+#myQuiz .question.unanswered .ans { /*unaswered state so the answers look like they are selectable when choosing*/
+	cursor: pointer;
+}
 
+#myQuiz .question.unanswered .ans:hover {
+	background-color: rgba(238, 189, 102, .2);
+}
 
-
-
+#myQuiz .question.answered .ans { /*answered state so the quiz looks disabled*/
+	cursor: default;
+}
 
 
 
