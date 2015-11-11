@@ -73,7 +73,7 @@ body { background-color: #fff; padding: 20px; }
 	width: 550px;
 	position: absolute;
 	top: 225px;
-	left: 40px;
+	left: 660px;
 }
 
 #myQuiz .question .txt {
@@ -132,15 +132,55 @@ body { background-color: #fff; padding: 20px; }
 	cursor: default;
 }
 
+#myQuiz .feedback {
+	color: #efbe5e;
+	margin-top: 10px;
+	transition: opacity 1.5s, margin-top 1.5s;
+	visibility: hidden; /*will still take up normal space it would but be invisible*/
+	opacity: 0;
+}
 
+#myQuiz .feedback .btn {
+	margin-top: 5px;
+}
 
+#myQuiz .feedback strong {
+	color: #fff;
+}
 
+#myQuiz .answered .feedback {
+	visibility: visible;
+	opacity: 1;
+	margin-top: 10px;
+}
 
+/* Questions */
+#myQuiz .results {
+	position: absolute;
+	top: 225px;
+	left: 40px;
+	width: 550px; 
+}
 
+#myQuiz .results .share {
+	margin-top: 40px;
+}
 
+#myQuiz .results .share a.btn {
+	margin-right: 20px;
+	padding: 9px 15px 8px 42px;
+	background-position: 10px 5px;
+	background-size: 25px 25px;
+}
 
+#myQuiz .results .share a.btn.email {
+	background-color: #f0a121;
+	background-image: url(../images/icon_email.svg);
+	background-repeat: no-repeat;
+}
 
-
-
-
-
+#myQuiz .results .share a.btn.twitter {
+	background-color: #59adeb;
+	background-image: url(../images/icon_twitter.svg);
+	background-repeat: no-repeat;
+}
